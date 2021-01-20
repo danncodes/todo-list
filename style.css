@@ -1,0 +1,184 @@
+/* Preset*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* Header */
+header {
+	font-size: 3rem;
+	padding: 0.4rem;
+	margin: 4rem 4rem 2rem 4rem;
+}
+
+/* Container */
+.container {
+	height: 100vh;
+	background: linear-gradient(
+		90deg,
+		rgba(0, 161, 255, 1) 35%,
+		rgba(0, 255, 239, 1) 100%
+	);
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	font-family: 'Andika New Basic', sans-serif;
+}
+
+/* Create New Todo */
+
+.create-new-todo {
+	width: 400px;
+	height: 3rem;
+}
+
+.btn {
+	border: 0;
+	pointer-events: inherit;
+}
+
+i {
+	font-size: 2rem;
+}
+
+form {
+	display: flex;
+	margin: 2rem;
+	padding: 2rem;
+}
+
+form input,
+form .btn {
+	border: 0;
+	background: white;
+	padding: 0.5rem;
+}
+
+/* Filter */
+
+select {
+	margin-left: 1rem;
+}
+
+/* Todo List */
+
+.list-item-div {
+	display: flex;
+	width: 100%;
+	justify-content: flex-end;
+}
+
+.fas {
+	cursor: pointer;
+}
+
+.clear-btn {
+	color: rgb(246, 238, 14);
+	color: linear-gradient(
+		54deg,
+		rgba(246, 238, 14, 0.9037990196078431) 35%,
+		rgba(240, 239, 13, 0.80015756302521) 100%
+	);
+}
+
+.add-todo-btn {
+	color: rgb(0, 255, 91);
+	color: linear-gradient(
+		241deg,
+		rgba(0, 255, 91, 0.9037990196078431) 35%,
+		rgba(130, 240, 13, 1) 100%
+	);
+}
+
+.fa-backspace:hover {
+	transform: scale(1.15);
+}
+
+.fa-plus-square:hover {
+	transform: scale(1.15);
+}
+
+ul {
+	width: 400px;
+	display: flex;
+	flex-direction: column;
+	background: white;
+	list-style: none;
+}
+
+.list-item {
+	padding: 0.2rem;
+	font-size: 1.5rem;
+	margin-right: auto;
+}
+
+.fa-check {
+	padding: 0.5rem;
+	background: rgb(0, 255, 91);
+	background: linear-gradient(
+		241deg,
+		rgba(0, 255, 91, 0.9037990196078431) 35%,
+		rgba(130, 240, 13, 1) 100%
+	);
+}
+
+.fa-trash {
+	padding: 0.5rem;
+	background: rgb(235, 16, 16);
+	background: linear-gradient(
+		54deg,
+		rgba(235, 16, 16, 0.9037990196078431) 35%,
+		rgba(240, 13, 13, 0.80015756302521) 100%
+	);
+}
+
+/* Completed Todos and Deleted*/
+
+.completed {
+	text-decoration: line-through;
+	font-style: italic;
+	font-size: 1.48rem;
+}
+
+.finished {
+	background: rgb(0, 255, 91);
+	opacity: 0.5;
+	transition: all 0.5s ease;
+}
+
+.fall {
+	transform: translateY(8rem) rotateZ(20deg);
+	transition: 1s all;
+	opacity: 0;
+}
+
+/* Reset Todos Btn */
+
+.reset-todo-list {
+	margin-top: 5rem;
+	padding: 0.5rem;
+	font-family: 'Andika New Basic', sans-serif;
+	color: whitesmoke;
+	text-shadow: 2px 3px 2px black;
+	cursor: pointer;
+	background: transparent;
+	border: none;
+}
+
+.reset-todo-list:hover {
+	transform: scale(1.05);
+	box-shadow: 2px 2px 20px whitesmoke;
+	transition: 1.5s;
+}
+
+/* Date and Time */
+.date {
+	font-size: 1.2rem;
+	color: whitesmoke;
+}
+
+.time {
+	font-size: 1.2rem;
+	color: whitesmoke;
+}

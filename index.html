@@ -1,0 +1,60 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>ToDo List</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Andika+New+Basic:ital@1&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+			integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+			crossorigin="anonymous"
+		/>
+	</head>
+	<body>
+		<!-- Container -->
+		<div class="container">
+			<header>To Do List</header>
+
+			<!-- Date and Time -->
+			<div class="date"></div>
+			<div class="time"></div>
+			<!-- Add New Todo Form -->
+			<form action="" class="todo-form">
+				<input
+					type="text"
+					placeholder="Enter something to do..."
+					name="new-todo"
+					class="create-new-todo"
+				/>
+				<button class="clear-btn btn">
+					<i class="fas fa-backspace clear-btn"></i>
+				</button>
+				<button class="add-todo-btn btn">
+					<i class="fas fa-plus-square add-todo-btn"></i>
+				</button>
+				<!-- Filter Todo -->
+				<select name="todos" class="filter-list">
+					<option value="all">All </option>
+					<option value="completed">Completed </option>
+					<option value="uncompleted">Uncompleted </option>
+				</select>
+			</form>
+
+			<!-- Todo List -->
+
+			<ul class="todo-list"></ul>
+
+			<!-- Reset Todo Button  -->
+			<button class="reset-todo-list">Reset List</button>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>
